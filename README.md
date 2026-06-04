@@ -434,7 +434,7 @@ CUADRADO_EN_I=NO
 
 **P4.** Ejecutá `grep -n '"1\.0"' programa.i` y copiá la línea encontrada.
 
-> **R:** 1743:    printf("=== Laboratorio de Compilacion en C (v%s) ===\n\n", "1.0");
+> **R:**1743:    printf("=== Laboratorio de Compilacion en C (v%s) ===\n\n", "1.0");
 
 ¿Cuál era el nombre de la macro en `programa.c` que fue reemplazada por `"1.0"`?
 
@@ -667,7 +667,7 @@ Aparecen como instrucciones de llamada (por ejemplo `bl _area_circulo`), pero **
 Respondé DEFINIDA o LLAMADA:
 
 <!-- Completá con DEFINIDA o LLAMADA: -->
-AREA_EN_S= LLAMADA
+AREA_EN_S=LLAMADA
 
 ---
 
@@ -808,7 +808,7 @@ Salida esperada (simplificada):
 Escribí solo la letra (una mayúscula):
 
 <!-- Completá con la letra exacta que muestra nm (U, T, D, etc.): -->
-TIPO_AREA_EN_O= U (Creo q es este: U __mingw_printf)
+TIPO_AREA_EN_O=U
 
 ---
 
@@ -999,7 +999,7 @@ SIMBOLOS_U_FINAL=SI
 ¿Qué valor da `factorial(5)`? Escribí solo el número:
 
 <!-- Completá con el número exacto: -->
-FACTORIAL_5= 120
+FACTORIAL_5=120
 
 ---
 
@@ -1255,18 +1255,3 @@ a. Ejecutar `clang -Xclang -dump-tokens programa.c 2>&1 | grep "programa.c" | wc
 b. Buscar en la salida del AST (`clang -Xclang -ast-dump`) la función `factorial`. ¿Cómo se representa la recursión en el árbol?
 c. ¿Aparece algún `ImplicitCastExpr` en el AST? ¿Qué conversión realiza?
 
-
-
-LINEAS_I=2000
-CUADRADO_EN_I=NO
-NOMBRE_MACRO_VERSION=VERSION
-COMENTARIOS_EN_I=NO
-DEBUG_ACTIVA_CODIGO=SI
-AREA_EN_S=LLAMADA
-LLAMADAS_EN_S=SI
-TIPO_AREA_EN_O=U
-ETAPA_QUE_RESUELVE=ENLAZADO
-EJECUTABLE_O=NO
-TIPO_AREA_ENLAZADO=T
-SIMBOLOS_U_FINAL=SI
-FACTORIAL_5=120
